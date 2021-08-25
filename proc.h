@@ -13,6 +13,9 @@ struct cpu {
 extern struct cpu cpus[NCPU];
 extern int ncpu;
 
+
+int readcount; // The counter for 'read' call
+
 //PAGEBREAK: 17
 // Saved registers for kernel context switches.
 // Don't need to save all the segment registers (%cs, etc),
